@@ -14,7 +14,7 @@
          <children>
             <Circle fill="#ffbb00" layoutX="34.0" layoutY="33.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
             <Circle fill="#ffbb00" layoutX="343.0" layoutY="33.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Label layoutX="67.0" layoutY="14.0" prefHeight="78.0" prefWidth="256.0" text="PASTELERIA DELCESITO" textFill="WHITE">
+            <Label layoutX="67.0" layoutY="14.0" prefHeight="78.0" prefWidth="256.0" text="PASTELERIA DULCESITO" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
