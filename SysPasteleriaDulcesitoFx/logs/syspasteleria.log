@@ -1936,3 +1936,54 @@ Caused by: org.hibernate.AnnotationException: Entity 'pe.edu.upeu.syspasteleriad
 2024-11-19T12:29:40.429-05:00  INFO 23852 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2024-11-19T12:29:40.779-05:00  INFO 23852 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
 2024-11-19T12:29:41.253-05:00  INFO 23852 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 3.179 seconds (process running for 3.584)
+2024-11-21T21:02:29.408-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 18.0.1.1 with PID 6728 (started by ASUS in C:\RONALDIÑO\PROYECTO-FINAL-POO-C2-G1\SysPasteleriaDulcesitoFx)
+2024-11-21T21:02:29.412-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-21T21:02:30.602-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21T21:02:30.735-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 15 JPA repository interfaces.
+2024-11-21T21:02:31.504-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21T21:02:31.597-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-21T21:02:31.649-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-21T21:02:32.114-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21T21:02:32.150-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-21T21:02:32.289-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6cec560a
+2024-11-21T21:02:32.291-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-21T21:02:33.970-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21T21:02:34.029-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21T21:02:34.498-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-21T21:02:35.406-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 6.769 seconds (process running for 8.206)
+2024-11-21T21:03:49.702-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21T21:03:49.710-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-21T21:03:49.722-05:00  INFO 6728 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-21T21:05:07.962-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 18.0.1.1 with PID 18552 (started by ASUS in C:\RONALDIÑO\PROYECTO-FINAL-POO-C2-G1\SysPasteleriaDulcesitoFx)
+2024-11-21T21:05:07.964-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-21T21:05:09.052-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21T21:05:09.192-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 15 JPA repository interfaces.
+2024-11-21T21:05:09.886-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21T21:05:09.976-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-21T21:05:10.078-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-21T21:05:10.842-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21T21:05:10.876-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-21T21:05:11.005-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@3c0440a4
+2024-11-21T21:05:11.007-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-21T21:05:12.850-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21T21:05:12.899-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21T21:05:13.599-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-21T21:05:14.545-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 7.381 seconds (process running for 8.354)
+2024-11-21T21:05:52.882-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21T21:05:52.885-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-21T21:05:52.889-05:00  INFO 18552 --- [SysPasteleriaDulcesitoFx] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-21T21:06:03.683-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 18.0.1.1 with PID 880 (started by ASUS in C:\RONALDIÑO\PROYECTO-FINAL-POO-C2-G1\SysPasteleriaDulcesitoFx)
+2024-11-21T21:06:03.687-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-21T21:06:04.699-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21T21:06:04.874-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 15 JPA repository interfaces.
+2024-11-21T21:06:05.661-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21T21:06:05.721-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-21T21:06:05.764-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-21T21:06:06.182-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21T21:06:06.217-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-21T21:06:06.359-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@845f3fb
+2024-11-21T21:06:06.361-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-21T21:06:07.902-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21T21:06:07.962-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21T21:06:08.715-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-21T21:06:10.069-05:00  INFO 880 --- [SysPasteleriaDulcesitoFx] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 7.158 seconds (process running for 8.127)
