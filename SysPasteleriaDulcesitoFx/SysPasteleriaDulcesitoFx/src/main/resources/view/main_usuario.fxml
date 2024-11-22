@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="miUsuario" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="569.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.syspasteleriadulcesitofx.control.UsuarioController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10">
+            <children>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Gestionar Usuario">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="274.0" layoutY="91.0" text="Filtrar Registro:" />
+                        <TextField fx:id="txtFiltroDato" layoutX="274.0" layoutY="109.0" />
+                        <Button layoutX="435.0" layoutY="109.0" mnemonicParsing="false" text="Buscar" />
+                    </children>
+                </AnchorPane>
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20">
+                    <children>
+                        <AnchorPane maxWidth="1.7976931348623157E308">
+                            <children>
+                                <GridPane style="-fx-padding: 10px;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text="Formulario de Registro" GridPane.columnSpan="2" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-alignment: center;" />
+                                        <Label text="Usuario:" GridPane.rowIndex="1" />
+                                        <TextField fx:id="txtUsuario" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </TextField>
+                                        <Label text="Contraseña:" GridPane.rowIndex="2" />
+                                        <TextField fx:id="txtClave" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </TextField>
+                                        <Label text="Estado:" GridPane.rowIndex="3" />
+                                        <ComboBox fx:id="cbxEstado" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="1.7976931348623157E308">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </ComboBox>
+                                        <Label text="Perfil:" GridPane.rowIndex="4" />
+                                        <ComboBox fx:id="cbxPerfil" GridPane.columnIndex="1" GridPane.rowIndex="4" maxWidth="1.7976931348623157E308">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </ComboBox>
+                                        <Button text="Guardar" onAction="#validarFormulario" GridPane.columnIndex="1" GridPane.rowIndex="5" maxWidth="1.7976931348623157E308">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button text="Cancelar" onAction="#cancelarAccion" GridPane.columnIndex="1" GridPane.rowIndex="6" maxWidth="1.7976931348623157E308">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Label fx:id="lbnMsg" GridPane.columnSpan="2" GridPane.rowIndex="7" style="-fx-font-size: 14px; -fx-text-fill: red;" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="1.7976931348623157E308">
+                            <children>
+                                <TableView fx:id="tableView" AnchorPane.topAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
