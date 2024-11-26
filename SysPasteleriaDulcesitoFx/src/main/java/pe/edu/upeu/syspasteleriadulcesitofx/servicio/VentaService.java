@@ -20,7 +20,6 @@ import java.util.List;
 public class VentaService {
     @Autowired
     VentaRepository repo;
-
     @Autowired
     DataSource dataSource;
 
@@ -52,8 +51,6 @@ public class VentaService {
     public Venta searchById(Long id) {
         return repo.findById(id).orElse(null);
     }
-
-
     public File getFile(String filex) {
         File newFolder = new File("jasper");
         String ruta = newFolder.getAbsolutePath();
@@ -64,19 +61,19 @@ public class VentaService {
     }
     public JasperPrint runReport(Long idv) throws JRException, SQLException {
         // Verificar si la venta existe
-        /*if (!repo.existsById(idv)) {
+        if (!repo.existsById(idv)) {
             throw new IllegalArgumentException("La venta con id " + idv + " no existe");
-        }*/
+        }
         HashMap<String, Object> param = new HashMap<>();
         // Obtener ruta de la imagen
-       // String imgen = getFile("logoupeu.png").getAbsolutePath();
-        //String urljasper=getFile("detallev.jasper").getAbsolutePath();
+        String imgen = getFile("logoupeu.png").getAbsolutePath();
+        String urljasper=getFile("detallev.jasper").getAbsolutePath();
         // Agregar parámetros
-        param.put("idProducto", idv);
-        //param.put("imagenurl", imgen);
-        //param.put("urljasper", urljasper);
+        param.put("idventa", idv);
+        param.put("imagenurl", imgen);
+        param.put("urljasper", urljasper);
         // Cargar el diseño del informe
-        JasperDesign jdesign = JRXmlLoader.load(getFile("main_venta.jrxml"));
+        JasperDesign jdesign = JRXmlLoader.load(getFile("comprobante.jrxml"));
         JasperReport jreport = JasperCompileManager.compileReport(jdesign);
         // Llenar el informe
         return JasperFillManager.fillReport(jreport, param, dataSource.getConnection());

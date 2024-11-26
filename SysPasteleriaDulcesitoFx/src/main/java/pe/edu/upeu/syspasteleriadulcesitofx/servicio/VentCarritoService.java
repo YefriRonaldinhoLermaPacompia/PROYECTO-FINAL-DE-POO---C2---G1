@@ -1,5 +1,6 @@
 package pe.edu.upeu.syspasteleriadulcesitofx.servicio;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upeu.syspasteleriadulcesitofx.modelo.VentCarrito;
@@ -39,5 +40,13 @@ public class VentCarritoService {
 
     public VentCarrito searchById(Long id) {
         return repo.findById(id).orElse(null);
+    }
+    public List<VentCarrito> listaCarritoCliente(String dni) {
+        return repo.listaCarritoCliente(dni);
+    }
+
+    @Transactional
+    public void deleteCarAll(String dniruc) {
+        this.repo.deleteByDniruc(dniruc);
     }
 }

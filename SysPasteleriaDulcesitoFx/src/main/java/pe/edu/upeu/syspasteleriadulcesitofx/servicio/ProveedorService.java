@@ -20,11 +20,15 @@ public class ProveedorService {
         return repo.findAll();
     }
 
-    public Proveedor update(Proveedor to, Long id) {
+    public Proveedor update(Proveedor to) {
         try {
+
+            Long id = to.getIdProveedor();
             Proveedor toe = repo.findById(id).orElse(null);
+
             if (toe != null) {
                 toe.setDniRuc(to.getDniRuc());
+
                 return repo.save(toe);
             }
         } catch (Exception e) {
@@ -32,6 +36,7 @@ public class ProveedorService {
         }
         return null;
     }
+
 
     public void delete(Long id) {
         repo.deleteById(id);

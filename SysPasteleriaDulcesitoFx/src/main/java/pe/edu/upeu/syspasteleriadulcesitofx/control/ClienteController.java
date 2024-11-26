@@ -122,6 +122,7 @@ public class ClienteController {
         tabla.setTableMenuButtonVisible(true);
         listar();
 
+
     }
 
     public void listar() {

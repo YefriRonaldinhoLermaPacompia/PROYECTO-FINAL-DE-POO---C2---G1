@@ -2,23 +2,28 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="569.0" prefWidth="732.0" style="-fx-text-fill: #FF5FF0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.syspasteleriadulcesitofx.control.ProductoController">
     <children>
+      <ImageView fitHeight="816.0" fitWidth="1009.0" layoutX="-64.0" layoutY="-96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Y.jpeg" />
+         </image></ImageView>
         <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
             <children>
-                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="691.0">
                     <children>
-                        <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: #D35400;" text="Gestionar Producto">
+                        <Label layoutX="24.0" layoutY="7.0" prefHeight="38.0" prefWidth="183.0" style="-fx-text-fill: #D35400;" text="GESTIONAR PRODUCTO" textFill="#07ffb9">
                             <font>
                                 <Font name="System Bold" size="16.0" />
                             </font>
                         </Label>
-                        <Label layoutX="274.0" layoutY="91.0" style="-fx-text-fill: #6C3483;" text="Filtrar Registro:" />
-                        <TextField fx:id="txtFiltroDato" layoutX="274.0" layoutY="109.0" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" />
-                        <Button layoutX="435.0" layoutY="109.0" mnemonicParsing="false" style="-fx-background-color: #A9DFBF; -fx-border-color: #229954;" text="Buscar" />
+                        <Label layoutX="440.0" layoutY="18.0" style="-fx-text-fill: #6C3483;" text="Filtrar Registro:" />
+                        <TextField fx:id="txtFiltroDato" layoutX="444.0" layoutY="54.0" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" />
+                        <Button layoutX="532.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: #A9DFBF; -fx-border-color: #229954;" text="Buscar" />
                     </children>
                     <VBox.margin>
                         <Insets />
@@ -26,7 +31,7 @@
                 </AnchorPane>
                 <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                     <children>
-                        <AnchorPane maxWidth="1.7976931348623157E308">
+                        <AnchorPane prefHeight="311.0" prefWidth="386.0">
                             <children>
                                 <GridPane style="-fx-padding: 5px; -fx-background-color: #FAD7A0; -fx-border-color: #E59866;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                                     <columnConstraints>
@@ -79,9 +84,9 @@
                                 </GridPane>
                             </children>
                         </AnchorPane>
-                        <AnchorPane maxWidth="1.7976931348623157E308">
+                        <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="307.0" prefWidth="242.0">
                             <children>
-                                <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                                <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="338.0" prefWidth="238.0" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
                             </children>
                         </AnchorPane>
                     </children>

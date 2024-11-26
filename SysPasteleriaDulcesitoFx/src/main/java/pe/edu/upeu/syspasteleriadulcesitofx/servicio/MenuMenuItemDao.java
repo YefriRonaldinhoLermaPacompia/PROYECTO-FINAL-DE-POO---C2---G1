@@ -28,11 +28,7 @@ public class MenuMenuItemDao implements MenuMenuItenDaoI{
         lista.add(new MenuMenuItenTO("Venta", "Reg. Venta", "miventa"));
         lista.add(new MenuMenuItenTO("Venta", "Reporte Ventas", "repventas"));
 
-        lista.add(new MenuMenuItenTO("Proveedor", "Tap. Prov", "tapprov"));
-        lista.add(new MenuMenuItenTO("Proveedor", "Tap. Prov", "tapprov"));
-        lista.add(new MenuMenuItenTO("Proveedor", "Tap. Prov", "tapprov"));
-
-
+        lista.add(new MenuMenuItenTO("Proveedor", "Tap. Prov", "miproveedor"));
 
         List<MenuMenuItenTO> accesoReal = new ArrayList<>();
         switch (perfil) {
