@@ -26,7 +26,7 @@ public class VentaController {
     @FXML
     TextField autocompProducto;
     @FXML
-    TextField nombreProducto, codigoPro, stockPro, cantidadPro, punitPro, preTPro, txtBaseImp, txtIgv, txtDescuento, txtImporteT;
+    TextField nombreProducto, codigoPro, stockPro, cantidadPro, punitPro, preTPro, txtBaseImp, txtIgv, txtDescuento, txtImporteT, txtDireccion;
     @FXML
     Button btnRegVenta, btnRegCarrito, btnFormCliente, btnborrarv;
     @FXML
@@ -250,6 +250,7 @@ public class VentaController {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        Borrar();
     }
     @FXML
     public void Borrar(){
@@ -260,6 +261,10 @@ public class VentaController {
             cantidadPro.setText("");
             punitPro.setText("");
             preTPro.setText("");
+            autocompCliente.setText("");
+            dniRuc.setText("");
+            razonSocial.setText("");
+            txtDireccion.setText("");
         }
 
     }

@@ -21,12 +21,10 @@ public class Proveedor {
     private String dniRuc;
     @Column(name = "nombres_raso", nullable = false, length = 120)
     private String nombresRaso;
-    @Column(name = "tipo_doc", nullable = false, length = 12)
-    private String tipoDoc;
-    @Column(name = "celular", nullable = false, length = 10)
-    private String celular;
-    @Column(name = "email", nullable = false, length = 100)
-    private String email;
+    @Column(name = "razon_social", nullable = false, length = 12)
+    private String razonSosial;
+    @Column(name = "telefono", nullable = false, length = 10)
+    private String telefono;
     @Column(name = "direccion", nullable = false, length = 120)
     private String direccion;
 }

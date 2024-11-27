@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="miContenedor" prefHeight="634.0" prefWidth="886.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pe.edu.upeu.syspasteleriadulcesitofx.control.ProveedorController"
+            style="-fx-background-color: #FDEFEF;">
+    <children>
+        <!-- Título -->
+        <Label layoutX="29.0" layoutY="35.0" text="Proveedor"
+               style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #D880A7;" />
+
+        <!-- Etiquetas -->
+        <Label layoutX="29.0" layoutY="88.0" text="Ruc:"
+               style="-fx-font-size: 14px; -fx-text-fill: #A066A8;" />
+        <Label layoutX="29.0" layoutY="139.0" text="Nombres:"
+               style="-fx-font-size: 14px; -fx-text-fill: #A066A8;" />
+        <Label layoutX="29.0" layoutY="192.0" text="Telefono:"
+               style="-fx-font-size: 14px; -fx-text-fill: #A066A8;" />
+        <Label layoutX="31.0" layoutY="239.0" text="Direccion:"
+               style="-fx-font-size: 14px; -fx-text-fill: #A066A8;" />
+        <Label layoutX="29.0" layoutY="287.0" text="Razon Social:"
+               style="-fx-font-size: 14px; -fx-text-fill: #A066A8;" />
+
+        <!-- Mensaje -->
+        <Label fx:id="lbnMsg" layoutX="37.0" layoutY="336.0" text="sms"
+               style="-fx-text-fill: #FF6F6F; -fx-font-style: italic;" />
+
+        <!-- Campos de texto -->
+        <TextField fx:id="txtRuc" layoutX="107.0" layoutY="84.0"
+                   style="-fx-background-color: #FFF7E8; -fx-border-color: #E7C7A8; -fx-border-radius: 5px;" />
+        <TextField fx:id="txtNombre" layoutX="108.0" layoutY="135.0"
+                   style="-fx-background-color: #FFF7E8; -fx-border-color: #E7C7A8; -fx-border-radius: 5px;" />
+        <TextField fx:id="txtTelefono" layoutX="109.0" layoutY="188.0"
+                   style="-fx-background-color: #FFF7E8; -fx-border-color: #E7C7A8; -fx-border-radius: 5px;" />
+        <TextField fx:id="txtDireccion" layoutX="108.0" layoutY="235.0"
+                   style="-fx-background-color: #FFF7E8; -fx-border-color: #E7C7A8; -fx-border-radius: 5px;" />
+        <TextField fx:id="txtRazon" layoutX="108.0" layoutY="283.0"
+                   style="-fx-background-color: #FFF7E8; -fx-border-color: #E7C7A8; -fx-border-radius: 5px;" />
+
+        <!-- Botones -->
+        <Button layoutX="99.0" layoutY="432.0" mnemonicParsing="false" onAction="#validarFormulario" text="Guardar"
+                style="-fx-background-color: #FFC4C4; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5px;" />
+        <Button layoutX="182.0" layoutY="432.0" mnemonicParsing="false" onAction="#cancelarFormulario" text="Cancelar"
+                style="-fx-background-color: #FFC4C4; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5px;" />
+
+        <!-- Panel secundario -->
+        <AnchorPane layoutX="329.0" layoutY="135.0" prefHeight="502.0" prefWidth="556.0"
+                    style="-fx-background-color: #FFF0F0; -fx-border-color: #FFD1A9; -fx-border-radius: 10px;">
+            <children>
+                <!-- Botones secundarios -->
+                <Button layoutX="83.0" layoutY="435.0" mnemonicParsing="false" onAction="#editarFormulario" text="Editar"
+                        style="-fx-background-color: #FFC4C4; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5px;" />
+                <Button layoutX="176.0" layoutY="435.0" mnemonicParsing="false" onAction="#eliminarFormulaio" text="Eliminar"
+                        style="-fx-background-color: #FFC4C4; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5px;" />
+
+                <!-- Tabla -->
+                <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="362.0" prefWidth="376.0"
+                           style="-fx-background-color: #FFF7E8; -fx-border-color: #FFD1A9;">
+                    <columns>
+                        <TableColumn fx:id="colRuc" prefWidth="75.0" text="Ruc" />
+                        <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="colTelefono" prefWidth="75.0" text="Telefono" />
+                        <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Direccion" />
+                        <TableColumn fx:id="colRazon" prefWidth="75.0" text="R.Social" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
